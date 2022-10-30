@@ -1,0 +1,29 @@
+program uts2;
+uses crt;
+
+var
+        awal, akhir : string;
+        fahrenheit, reamur, celcius, kelvin : real;
+
+begin
+clrscr;
+
+        write('Masukkan Nama Awal  : ');
+        readln(awal);
+        write('Masukkan Nama Akhir : ');
+        readln(akhir);
+        write('Masukkan Suhu Hari Ini Dalam Celcius : ');
+        readln(celcius);
+
+        fahrenheit := (9/5 * celcius) + 32;
+        reamur := 4/5 * celcius;
+        kelvin := celcius + 273;
+
+        clrscr;
+
+        writeln('Halo ', awal, ' ', akhir, ', hari ini bersuhu ', reamur:0:2, ' reamur / ',kelvin:0:2, ' Kelvin / ',fahrenheit:0:2,' Farenheit.');
+
+
+readln;
+end.
+

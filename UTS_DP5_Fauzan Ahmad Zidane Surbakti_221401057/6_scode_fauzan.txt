@@ -1,0 +1,21 @@
+program uts6;
+uses crt;
+
+var
+        angka : integer;
+
+begin
+clrscr;
+
+        angka := 0;
+
+        repeat
+                begin
+                        angka := angka + 1;
+                end;    write(angka, ' ');
+
+        until (angka = 6);
+
+readln;
+end.
+

@@ -1,0 +1,34 @@
+program uts3;
+uses crt;
+
+var
+        x, y : integer;
+
+begin
+clrscr;
+
+        write('Masukkan titik x : ');
+        readln(x);
+        write('Masukkan titik y : ');
+        readln(y);
+
+        if (x > 0) and (y > 0) then
+                begin
+                        writeln('Titik Anda Berada Di Kuadran 1');
+                end
+
+        else if (x < 0) and (y > 0) then
+                begin
+                        writeln('Titik Anda Berada Di Kuadran 2');
+                end
+        else if (x < 0) and (y < 0) then
+                begin
+                        writeln('Titik Anda Berada Di Kuadran 3');
+                end
+        else if (x > 0) and (y < 0) then
+                begin
+                        writeln('Titik Anda Berada Di Kuadran 4');
+                end;
+
+readln;
+end.
